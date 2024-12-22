@@ -10,5 +10,7 @@
 - 05.11 - создали папки в Visual Studio Code, задали структуру проекта
 - 25.11 - сохранили картинки и шрифты из макета в проект, сделала базовую разметку HTML
 - 02.12 - работали над главной страницей сайта
+- 11.12 - добавили атрибуты class
+- 18.12 - начала css
 # Ссылка на макет 
 https://www.figma.com/design/5d3GM0l1k7jnOcYKeTU580/Banking-Company-Website-UI-Template-Design-in-Dark-Theme-(-FREE-Editable-)-(Community)?node-id=5-26176&node-type=frame&t=hhtgC4P85HLuA7sh-0
