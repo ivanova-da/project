@@ -8,117 +8,124 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class=”header”>
-        <img class=”header__logo” src="images/logo.jpeg" alt="" width="150">
-        <h1 class=”header__title”>Онлайн-банкинг</h1>
-        <Nav class=”header__menu”>
-             <ul class=”menu”>
-                 <li class=”menu__item menu__item--active”>
-                    <a class=”menu__link” href="#">Главная страница</a>
+    <header class="header container">
+        <a class="header__logo-wrap" href="index.html">
+        <img class="header__logo" src="images/logo2.jpeg" alt="логотип сайта" width="100">
+        <h1 class="header__title">StarkBank</h1>
+    </a>
+        <nav class="header__menu">
+             <ul class="menu">
+                 <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="#">Главная страница</a>
                 </li>
-                 <li class=”menu__item”><a class=”menu__link” href="#">Вклады</a></li>
-                 <li class=”menu__item”><a class=”menu__link” href="#">Кредиты</a></li>
-                 <li class=”menu__item”><a class=”menu__link” href="#">Карты</a></li>
+                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Вклады</a></li>
+                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Кредиты</a></li>
+                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Карты</a></li>
              </ul>
-        </Nav>
+        </nav> 
         <button class="header__login" type="button">
-            <img class="header__login-icon" src="images/logo1.jpeg" alt="" width="30" height="16">
-            <span class="header__login-text">Войти</span>
-        </button>
-        <a class=”header__botton” href="#">Вход</a>
-        <a class=”header__botton” href="#">Регистрация</a>
-    </header>
-     <main class=”main”>
-         <div class=”about”>
-             <h2 class=”about__title”> ДОБРО ПОЖАЛОВАТЬ В StarkBank, РАСШИРЯЮЩИЙ ВОЗМОЖНОСТИ ВАШЕГО ФИНАНСОВОГО ПУТЕШЕСТВИЯ</h2>
-             <img class=”about__image” src="images/0.webp" alt="" width="200">
-             <p class=”about__purpose”>В StarkBank наша миссия заключается в предоставлении комплексных банковских решений, которые позволяют частным лицам и компаниям достигать своих финансовых целей. Мы стремимся предоставить персонализированные и инновационные услуги, которые ставят на первое место потребности наших клиентов.</p>
+        <a class="header__botton" href="#">Вход</a>
+    </button>
+    <button class="header__login" type="button">
+        <a class="header__botton" href="#">Регистрация</a>
+    </button>
+</header> 
+     <main class="main container">
+         <div class="about">
+             <h2 class="about__title"> ДОБРО ПОЖАЛОВАТЬ В StarkBank</h2>
+             <img class="about__image" src="images/0.webp" alt="главное изображение" width="200">
+             <p class="about__purpose">В StarkBank наша миссия заключается в предоставлении комплексных банковских решений, которые позволяют частным лицам и компаниям достигать своих финансовых целей. Мы стремимся предоставить персонализированные и инновационные услуги, которые ставят на первое место потребности наших клиентов.</p>
          </div>
-         <section class=”products”>
-            <h2 class=”products__title”>Наши продукты</h2>
-            <p class=”products__description”> Откройте для себя ряд комплексных и настраиваемых банковских продуктов в StarkBank, разработанных с учётом ваших уникальных финансовых потребностей и стремлений.</p>
-            <div>
-                <img class=”products__image” src="images/Icon Container (3).svg" alt="" width="100">
-                <h2 class=”products__title”>Карты</h2>
-                <p class=”products__description”>Наслаждайтесь простым и удобным доступом к вашим средствам с нашим ассортиментом банковских карт. Воспользуйтесь такими функциями, как онлайн-банкинг и мобильный банкинг, дебетовые и кредитовые карты и бесплатный доступ к банкоматам </p>
+         <section class="products">
+            <h2 class="products__title">Наши продукты</h2>
+            <p class="products__description"> Откройте для себя ряд комплексных и настраиваемых банковских продуктов в StarkBank, разработанных с учётом ваших уникальных финансовых потребностей и стремлений.</p>
+           <div class="products__list">
+            <div class="products__card">
+                <img class="products__image" src="images/Icon Container (3).svg" alt="иконка карт" width="100">
+                <h2 class="products__title">Карты</h2>
+                <p class="products__description">Наслаждайтесь простым и удобным доступом к вашим средствам с нашим ассортиментом банковских карт. Воспользуйтесь такими функциями, как онлайн-банкинг и мобильный банкинг, дебетовые и кредитовые карты и бесплатный доступ к банкоматам.</p>
             </div>
-            <div>
-                <img class=”products__image” src="images/Icon Container (2).svg" alt="" width="100">
-                <h2 class=”products__title”>Вклады</h2>
-                <p class=”products__description”>Создайте свои сбережения с нашими конкурентоспособными процентными ставками и гибкими вариантами сберегательных счетов. Независимо от того, копите ли вы на определённую цель или хотите со временем увеличить своё богатство, у нас есть подходящий для вас счёт</p>
+            <div class="products__card">
+                <img class="products__image" src="images/Icon Container (2).svg" alt="иконка вкладов" width="100">
+                <h2 class="products__title">Вклады</h2>
+                <p class="products__description">Создайте свои сбережения с нашими конкурентоспособными процентными ставками и гибкими вариантами сберегательных счетов. Независимо от того, копите ли вы на определённую цель или хотите со временем увеличить своё богатство, у нас есть подходящий для вас счёт.</p>
             </div>
-            <div>
-                <img class=”products__image” src="images/Icon Container (1).svg" alt="" width="100">
-                <h2 class=”products__title”>Кредиты</h2>
-                <p class=”products__description”>Осуществите свои мечты с нашими гибкими вариантами кредитования. Наши опытные кредитные специалисты здесь, чтобы провести вас через процесс подачи заявки и помочь вам получить необходимые средства</p>
+            <div class="products__card">
+                <img class="products__image" src="images/Icon Container (1).svg" alt="иконка кредитов" width="100">
+                <h2 class="products__title">Кредиты</h2>
+                <p class="products__description">Осуществите свои мечты с нашими гибкими вариантами кредитования. Наши опытные кредитные специалисты здесь, чтобы провести вас через процесс подачи заявки и помочь вам получить необходимые средства.</p>
             </div>
+        </div>
          </section>
-         <section class=”offers”>
-            <h2 class=”offers__title”>Интересные предложения</h2>
-            <div>
-                <img class=”offers__image” src="images/Icon22.svg" alt="" width="70">
-                <h2 class=”offers__title”>Карты</h2>
-                <p class=”offers__description”>Кэшбэк 1% 
-                    Бесплатное обслуживание 
-                    Мировая поддержка</p>
+         <section class="offers">
+            <h2 class="offers__title">Интересные предложения</h2>
+            <div class="offers__list">
+            <div class="offers__card">
+                <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                <h2 class="offers__title">Карты</h2>
+                <p class="offers__description">Кэшбэк 1%</p>
+                <p class="offers__description">Бесплатное обслуживание</p>
+                <p class="offers__description">Мировая поддержка</p>
             </div>
-            <div>
-                <img class=”offers__image” src="images/Icon22.svg" alt="" width="70">
-                <h2 class=”offers__title”>Вклады</h2>
-                <p class=”offers__description”>Ставка 5% годовых 
-                    Минимум 1000 рублей
-                    Без скрытых комиссий
-                    Гибкие условия</p>
+            <div class="offers__card">
+                <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                <h2 class="offers__title">Вклады</h2>
+                <p class="offers__description">Ставка 5% годовых </p>
+                    <p class="offers__description">Минимум 1000 рублей</p>
+                    <p class="offers__description">Без скрытых комиссий</p>
+                    <p class="offers__description">Гибкие условия</p>
             </div>
-            <div>
-                <img class=”offers__image” src="images/Icon22.svg" alt="" width="70">
-                <h2 class=”offers__title”>Кредиты</h2>
-                <p class=”offers__description”>Ставка 10% годовых
-                    Сумма до 1 миллиона
-                    Одобрение за 1 час</p>
+            <div class="offers__card">
+                <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                <h2 class="offers__title">Кредиты</h2>
+                <p class="offers__description">Ставка 10% годовых</p>
+                <p class="offers__description">Сумма до 1 миллиона</p>
+                <p class="offers__description">Одобрение за 1 час</p>
             </div>
+        </div>
          </section>
-         <section class=”quality”>
-            <h2 class=”quality__title”>Почему выбирают Stark Bank?</h2>
-            <div>
-                <img class=”quality__image” src="images/Icon23.svg" alt="" width="50">
-                <h2 class=”quality__title”>Надежность</h2>
-                <p class=”quality__description”>Мы гарантируем безопасность ваших средств и конфиденциальность данных.</p>
+         <section class="quality">
+            <h2 class="quality__title">Почему выбирают Stark Bank?</h2>
+            <div class="quality__list">
+            <div class="quality__card">
+                <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                <h2 class="quality__title">Надежность</h2>
+                <p class="quality__description">Мы гарантируем безопасность ваших средств и конфиденциальность данных.</p>
             </div>
-            <div>
-                <img class=”quality__image” src="images/Icon23.svg" alt="" width="50">
-                <h2 class=”quality__title”>Удобство</h2>
-                <p class=”quality__description”>Легкий доступ к услугам через наш интуитивно понятный интерфейс.</p>
+            <div class="quality__card">
+                <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                <h2 class="quality__title">Удобство</h2>
+                <p class="quality__description">Легкий доступ к услугам через наш интуитивно понятный интерфейс.</p>
             </div>
-            <div>
-                <img class=”quality__image” src="images/Icon23.svg" alt="" width="50">
-                <h2 class=”quality__title”>Поддержка</h2>
-                <p class=”quality__description”>Круглосуточная поддержка, готовая помочь в любой ситуации.</p>
+            <div class="quality__card">
+                <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                <h2 class="quality__title">Поддержка</h2>
+                <p class="quality__description">Круглосуточная поддержка, готовая помочь в любой ситуации.</p>
             </div>
-            <p class=”quality__title”>Добро пожаловать в Stark Bank!</p>
+        </div>
+            <p class="quality__title">Добро пожаловать в Stark Bank!</p>
          </section>
      </main>
-     <footer class=”footer”>
-        <img class=”footer__image” src="images/logo.jpeg" alt="" width="50">
-        <h2 class=”footer__title”>Stark Bank</h2>
-        <div>
-            <img class=”footer__image” src="images/Icon.svg" alt="" width="50">
-            <p class=”footer__mail”>starkbank@gmail.com</p>
+     <footer class="footer container">
+        
+        <div class="footer__list">
+        <div class="footer__card">
+            <img class="footer__image" src="images/Icon.svg" alt="иконка почты" width="50">
+            <p class="footer__mail">starkbank@gmail.com</p>
         </div>
-        <div>
-            <img class=”footer__image” src="images/Icon5.svg" alt="" width="50">
-            <p class=”footer__contacts”>+79024375673</p>
+        <div class="footer__card">
+            <img class="footer__image" src="images/Icon5.svg" alt="иконка телефона" width="50">
+            <p class="footer__contacts">+79024375673</p>
         </div>
-        <div>
-            <img class=”footer__image” src="images/Icon6.svg" alt="" width="50">
-            <p class=”footer__address”>Республика Марий Эл, г. Йошкар-Ола, ул.Кирова, 45</p>
+        <div class="footer__card">
+            <img class="footer__image" src="images/Icon6.svg" alt="иконка адреса" width="50">
+            <p class="footer__address">Республика Марий Эл, г. Йошкар-Ола, ул.Кирова, 45</p>
         </div>
-        <img class=”footer__image” src="images/Buttons Container.svg" alt="" width="70">
+    </div>
         <div class="dialog dialog--layout">
             <!-- Форма "Войдите в профиль" -->
             <section class="popup">
-                <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="30"
-                        height="24"></button>
+                
                 <h2 class="popup__title">Войдите в профиль</h2>
                 <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
                 <div class="popup__buttons">
@@ -168,7 +175,7 @@
             </section>
             <!--/ Форма "Войти" -->
         </div>    
-         <p class=”footer__authors”>Черепанова Анна, Ванюкова Полина, Иванова Дарья, ЭК-21</p>
+         <p class="footer__authors">Черепанова Анна, Ванюкова Полина, Иванова Дарья, ЭК-21</p>
      </footer>
 </body>
 </html>

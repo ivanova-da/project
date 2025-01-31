@@ -29,4 +29,8 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
-    
+    .container{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+       }
