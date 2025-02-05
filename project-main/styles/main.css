@@ -1,0 +1,197 @@
+.about{
+    display: flex;
+    gap: 10px;
+   }
+   .about__wrap-right{
+    width: 500px;
+    flex-shrink: 0;
+   }
+.about{
+    background-color: rgb(180, 181, 182);
+     color: rgb(255, 255, 255);
+     padding: 10px;
+    }
+.products__card{
+        width: 350px;
+        padding: 15px;
+        background-color: aliceblue;
+       color: black;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+       }
+.products__title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
+       }
+.products__item {
+        text-decoration: none; 
+}
+.products__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
+    }
+.products__description{
+        margin-top: 0;
+        margin-bottom: 15px;
+       } 
+.products__list {
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+       }
+.products__image{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+       }
+.products__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.offers__card{
+        width: 350px;
+        padding: 15px;
+        background-color: aliceblue;
+       color: black;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+       }
+.offers__title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
+       }
+.offers__item {
+        text-decoration: none; 
+}
+.offers__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
+}
+.offers__description{
+        margin-top: 0;
+        margin-bottom: 15px;
+       } 
+.offers__list{
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+       }
+.offers__image{
+        width: 70%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+.offers__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.quality__card{
+        width: 350px;
+        padding: 15px;
+        background-color: aliceblue;
+       color: black;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+       }
+.quality__title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
+       }
+.quality__item {
+        text-decoration: none; 
+}
+.quality__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
+       }
+.quality__description{
+        margin-top: 0;
+        margin-bottom: 15px;
+       } 
+.quality__list {
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+       }
+.quality__image{
+        width: 50%;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+.quality__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.footer__card{
+        width: 260px;
+        height: 200px;
+        padding: 15px;
+        background-color: rgb(200, 202, 204);
+        color: black;
+        box-shadow: 1px 2px 20px 5px #d7d7d7;
+       }
+.footer__title{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+       }
+.footer__description{
+        margin-top: 0;
+        margin-bottom: 15px;
+       } 
+.footer__list {
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+       }
+.footer__image{
+        width: 50%;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }
+.footer__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
