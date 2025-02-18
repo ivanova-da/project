@@ -11,11 +11,18 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* Sections
    ========================================================================== */
-
+section {
+  scroll-margin-block-start: 80px;
+}
 /**
  * Remove the margin in all browsers.
  */
@@ -156,7 +163,6 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-
 button,
 input,
 optgroup,
