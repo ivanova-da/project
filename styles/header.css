@@ -1,97 +1,58 @@
 .header {
-    position: fixed;
-    top: -100%;
-    left: 50%;
-    z-index: 2;
-
     display: flex;
     align-items: center;
-    column-gap: 80px;
-    width: 100%;
-    padding: 40px 120px;
-
-    transform: translateX(-50%);
-
-    animation: show-header 0.8s ease-out forwards;
+    justify-content: space-between;
+    padding: 40px 120 px 0;
 }
-
-.header--scroll {
-    background-color: #fefefb;
-}
-
-.header__list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    padding-left: 0;
-
-    list-style: none;
-}
-
-.header__item-link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #9196a1;
-    text-decoration: none;
-
-    transition: color 0.4s ease-out, text-shadow 0.3s;
-}
-
-.header__item-link:hover,
-.header__item-link:focus {
-    color: #3a3c41;
-}
-
-.header__item-link:active {
-    text-shadow: 1px -1px 1px #3a3c41;
-}
-
-.header__item-link--active {
-    font-weight: 600;
-    color: #3a3c41;
-
-    cursor: default;
-}
-
-.header__login {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-left: auto;
+.menu {
+    margin: 0;
     padding: 0;
-
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #fdb100;
-    border: none;
-    background-color: initial;
-
-    cursor: pointer;
-}
-
-.header__login::before {
-    content: "";
-
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-
-    border: 1px solid #fdb100;
-    border-radius: 50%;
-    background-color: #fdb100;
-    background-image: url(/images/icon/login.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-
-    will-change: transform;
-    transition: transform 0.4s ease-out;
+    flex-wrap: wrap;
+   }
+.menu__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(109, 107, 117);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.5s, background-color 0.5s;
+   }
+.menu__link:hover {
+    background-color: rgb(101, 101, 105);
+    color: rgb(137, 135, 163);
 }
-
-.header__login:hover::before,
-.header__login:focus::before {
-    transform: scale(1.1);
+.header__login{
+    display: inline-block;
+     padding: 10px;
+     margin: 5px;
+     background-color: rgb(144, 143, 144);
+     color: rgb(12, 12, 12);
+     text-decoration: none;
+     transition: color 0.5s, background-color 0.5s;
+    }
+.header__login:hover {
+    background-color: rgb(161, 153, 177);
+    color: rgb(105, 98, 202);
 }
+.header__logo-wrap{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+       }  
+.header__logo-wrap{
+        text-decoration: none;
+        color: rgb(0, 80, 121);
+       }
+.header__title{
+        margin: 0;
+       }
+.header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+       }    
+          

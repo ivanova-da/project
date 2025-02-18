@@ -1,14 +1,14 @@
 .search {
-    margin-top: 145px;
+    margin-top: 10px;
     padding: 0 158px;
 }
 
 .search__title {
-    margin-bottom: 11px;
+    margin-bottom: 5px;
 }
 
 .search__description {
-    font-family: "Mulish", Arial, sans-serif;
+    font-family: 'Lexend', 'Arial', sans-serif;
     line-height: 32px;
     letter-spacing: 0.6px;
 }
@@ -17,7 +17,7 @@
     display: flex;
     gap: 16px;
 
-    margin-top: 64px;
+    margin-top: 10px;
 }
 
 .search__form-name {
@@ -29,7 +29,7 @@
     font-weight: 400;
     line-height: 22px;
 
-    border-color: transparent;
+    border-color: #25292d;
 
     background-color: #ffffff;
 }
@@ -41,7 +41,7 @@
 
 .search__form-submit {
     min-width: 152px;
-    padding: 21px 32px;
+    padding: 8px 32px;
 }
 
 .search__tag-list {
@@ -51,7 +51,7 @@
     gap: 6px 13px;
     flex-wrap: wrap;
 
-    padding-left: 0;
+    padding-left: 10;
 
     list-style: none;
     color: #808080;

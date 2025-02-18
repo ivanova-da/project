@@ -3,158 +3,175 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Рецепты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Банк</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+</head>
 
 <body>
-    <!-- Заголовок -->
     <header class="header container">
-        <!-- Логотип -->
-        <a class="header__logo logo">Recipes</a>
-        <!--/ Логотип -->
-        <!-- Навигация -->
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="#promo" class="header__item-link header__item-link--active">Главная</a></li>
-                <li class="header__item"><a href="#card" class="header__item-link" href="#">Рецепты</a></li>
-                <li class="header__item"><a href="#recipe" class="header__item-link" href="#">Избранное</a></li>
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logo2.jpeg" alt="логотип сайта" width="100">
+            <h1 class="header__title">StarkBank</h1>
+        </a>
+        <nav class="header__menu">
+            <ul class="menu">
+                <li class="menu__item menu__item--active">
+                    <a class="menu__link" href="#">Главная страница</a>
+                </li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Вклады</a></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Кредиты</a></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Карты</a></li>
             </ul>
         </nav>
-        <!--/ Навигация -->
-        <button class="header__login" type="button">
-            Войти
-        </button>
+        <a class="header__login" href="#">Вход</a>
+        <a class="header__login" href="#">Регистрация</a>
     </header>
-    <!--/ Заголовок -->
-    <!-- Основной контент -->
-    <main class="container" id="main">
-        <!-- Первый экран -->
-        <section class="section promo" id="promo">
-            <div class="promo__content">
-                <h2 class="promo__title section__title">Готовь и делись рецептами</h2>
-                <p class="promo__description">Никаких кулинарных книг и блокнотов! Храни все <br>любимые рецепты в одном
-                    месте.</p>
-                <div class="promo__buttons">
-                    <button class="promo__button-add button button--accent" type="button">Добавить рецепт</button>
-                    <button class="promo__button button" type="button">Войти</button>
+    <section class="section search">
+        <h2 class="search__title section__title section__title--center">Введите запрос</h2>
+        <form class="search__form form" action="/" method="get">
+            <input class="search__form-name form__field" type="search" name="text" placeholder="Название операции">
+            <button class="search__form-submit button button--accent" type="submit">Поиск</button>
+        </form>
+    </section>
+    <main class="main container">
+        <div class="about">
+            <h2 class="about__title"> ДОБРО ПОЖАЛОВАТЬ В StarkBank</h2>
+            <img class="about__image" src="images/0.webp" alt="главное изображение" width="200">
+            <p class="about__purpose">В StarkBank наша миссия заключается в предоставлении комплексных банковских
+                решений, которые позволяют частным лицам и компаниям достигать своих финансовых целей. Мы стремимся
+                предоставить персонализированные и инновационные услуги, которые ставят на первое место потребности
+                наших клиентов.</p>
+        </div>
+        <section class="products">
+            <h2 class="products__title">Наши продукты</h2>
+            <p class="products__description"> Откройте для себя ряд комплексных и настраиваемых банковских продуктов в
+                StarkBank, разработанных с учётом ваших уникальных финансовых потребностей и стремлений.</p>
+            <div class="products__list">
+                <div class="products__card">
+                    <a class="products__item" href="#">
+                        <span class="products__icon">
+                            <img class="products__image" src="images/Icon Container (3).svg" alt="иконка карт"
+                                width="100">
+                        </span>
+                        <h2 class="products__title">Карты</h2>
+                    </a>
+                    <p class="products__description">Наслаждайтесь простым и удобным доступом к вашим средствам с нашим
+                        ассортиментом банковских карт. Воспользуйтесь такими функциями, как онлайн-банкинг и мобильный
+                        банкинг, дебетовые и кредитовые карты и бесплатный доступ к банкоматам.</p>
+                </div>
+                <div class="products__card">
+                    <a class="products__item" href="#">
+                        <span class="products__icon">
+                            <img class="products__image" src="images/Icon Container (2).svg" alt="иконка вкладов"
+                                width="100">
+                        </span>
+                        <h2 class="products__title">Вклады</h2>
+                    </a>
+                    <p class="products__description">Создайте свои сбережения с нашими конкурентоспособными процентными
+                        ставками и гибкими вариантами сберегательных счетов. Независимо от того, копите ли вы на
+                        определённую цель или хотите со временем увеличить своё богатство, у нас есть подходящий для вас
+                        счёт.</p>
+                </div>
+                <div class="products__card">
+                    <a class="products__item" href="#">
+                        <span class="products__icon">
+                            <img class="products__image" src="images/Icon Container (1).svg" alt="иконка кредитов"
+                                width="100">
+                        </span>
+                        <h2 class="products__title">Кредиты</h2>
+                    </a>
+                    <p class="products__description">Осуществите свои мечты с нашими гибкими вариантами кредитования.
+                        Наши опытные кредитные специалисты здесь, чтобы провести вас через процесс подачи заявки и
+                        помочь вам получить необходимые средства.</p>
                 </div>
             </div>
-            <img class="promo__image" src="images/section1.png" alt="Изображение завтрака" width="602" height="800">
         </section>
-        <!--/ Первый экран -->
-
-        <section class="section card"  id="card">
-            <h2 class="section__title">Умная сортировка по тегам</h2>
-            <p class="section__description">Добавляй рецепты и указывай наиболее популярные теги. Это позволит быстро
-                находить любые категории.</p>
-            <div class="card__list">
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/icon/menu.svg" alt="Иконка для простых блюд" width="22"
-                             height="24">
-                    </span>
-                    <h3 class="card__title">Простые блюда</h3>
-                    <p class="card__description">Время приготовления таких блюд не более 1 часа</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/icon/cook.svg" alt="Иконка для детского меню" width="24"
-                        height="24">
-                    </span>
-                    <h3 class="card__title">Детское</h3>
-                    <p class="card__description">Самые полезные блюда которые можно детям любого возраста</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/icon/chef.svg" alt="Иконка для блюд от шеф-поваров" width="24"
-                        height="23">
-                    </span>
-                    <h3 class="card__title">От шеф-поваров</h3>
-                    <p class="card__description">Требуют умения, времени и терпения, зато как в ресторане</p>
-                </a>
-                <a class="card__item" href="#">
-                    <span class="card__icon">
-                        <img src="images/icon/fire.svg" alt="Иконка для блюд на праздник" width="24"
-                        height="23">
-                    </span>
-                    <h3 class="card__title">На Праздник</h3>
-                    <p class="card__description">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="section recipe" id="recipe">
-            <div class="recipe__indicators">
-                    <span class="recipe__indicators-favourites">
-                        <img class="recipe__indicators-image" src="images/icon/heart.svg" alt="Избранное" width="20"
-                             height="18">
-                        356
-                    </span>
-                <span class="recipe__indicator-time">
-                        <img class="recipe__indicators-image" src="images/icon/timer.svg" alt="Время приготовления"
-                             width="18" height="21">
-                        35 минут
-                    </span>
-            </div>
-            <div class="recipe__photo">
-                <a class="recipe__contact" href="#" target="_blank">@glazest</a>
-                <img class="recipe__image" src="images/section2.png" alt="Изображение тыквенного супчика" width="543"
-                    height="543">
-            </div>
-            <div class="recipe__content">
-                <div class="recipe__day">
-                    <svg class="recipe__circle" viewBox="0 0 100 100">
-                        <path class="recipe__circle-path" id="circle" d="M 50,50 m -50,0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
-                        <text>
-                            <textPath href="#circle" startOffset="25%" text-anchor="middle">
-                                рецепт дня
-                            </textPath>
-                        </text>
-                    </svg>
-                    <div class="recipe__day-image">
-                        <img src="images/icon/smile.svg" alt="Рецепт дня" width="50" height="50">
-                    </div>
+        <section class="offers">
+            <h2 class="offers__title">Интересные предложения</h2>
+            <div class="offers__list">
+                <div class="offers__card">
+                    <a class="offers__item" href="#">
+                        <span class="offers__icon">
+                            <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                        </span>
+                        <h2 class="offers__title">Карты</h2>
+                    </a>
+                    <p class="offers__description">Кэшбэк 1%</p>
+                    <p class="offers__description">Бесплатное обслуживание</p>
+                    <p class="offers__description">Мировая поддержка</p>
                 </div>
-                <h2 class="recipe__content-title section__title">Тыквенный супчик на кокосовом молоке</h2>
-                <p class="recipe__content-description section__description">Если у вас осталась тыква, и вы не знаете что с ней сделать, то это
-                    решение для вас! Ароматный,
-                    согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!</p>
+                <div class="offers__card">
+                    <a class="offers__item" href="#">
+                        <span class="offers__icon">
+                            <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                        </span>
+                        <h2 class="offers__title">Вклады</h2>
+                    </a>
+                    <p class="offers__description">Ставка 5% годовых </p>
+                    <p class="offers__description">Минимум 1000 рублей</p>
+                    <p class="offers__description">Без скрытых комиссий</p>
+                    <p class="offers__description">Гибкие условия</p>
+                </div>
+                <div class="offers__card">
+                    <a class="offers__item" href="#">
+                        <span class="offers__icon">
+                            <img class="offers__image" src="images/Icon22.svg" alt="стрелка" width="70">
+                        </span>
+                        <h2 class="offers__title">Кредиты</h2>
+                    </a>
+                    <p class="offers__description">Ставка 10% годовых</p>
+                    <p class="offers__description">Сумма до 1 миллиона</p>
+                    <p class="offers__description">Одобрение за 1 час</p>
+                </div>
             </div>
         </section>
-
-        <section class="section search">
-            <h2 class="search__title section__title section__title--center">Поиск рецептов</h2>
-            <p class="search__description section__description--center">Введите примерное название блюда, а мы по тегам
-                найдем его</p>
-            <form class="search__form form" action="/" method="get">
-                <input class="search__form-name form__field" type="search" name="text" placeholder="Название Блюда....">
-                <button class="search__form-submit button button--accent" type="submit">Поиск</button>
-            </form>
-            <ul class="search__tag-list">
-                <li class="search__tag-item">Мясо</li>
-                <li class="search__tag-item">Деликатесы</li>
-                <li class="search__tag-item">Пироги</li>
-                <li class="search__tag-item">Рыба</li>
-            </ul>
+        <section class="quality">
+            <h2 class="quality__title">Почему выбирают Stark Bank?</h2>
+            <div class="quality__list">
+                <div class="quality__card">
+                    <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                    <h2 class="quality__title">Надежность</h2>
+                    <p class="quality__description">Мы гарантируем безопасность ваших средств и конфиденциальность
+                        данных.</p>
+                </div>
+                <div class="quality__card">
+                    <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                    <h2 class="quality__title">Удобство</h2>
+                    <p class="quality__description">Легкий доступ к услугам через наш интуитивно понятный интерфейс.</p>
+                </div>
+                <div class="quality__card">
+                    <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
+                    <h2 class="quality__title">Поддержка</h2>
+                    <p class="quality__description">Круглосуточная поддержка, готовая помочь в любой ситуации.</p>
+                </div>
+            </div>
+            <p class="quality__title">Добро пожаловать в Stark Bank!</p>
         </section>
     </main>
-    <!--/ Основной контент -->
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <a class="footer__logo logo">Recipes</a>
-            <p class="footer__copy">&copy; Recipes 2021</p>
+    <footer class="footer container">
+
+        <div class="footer__list">
+            <div class="footer__card">
+                <img class="footer__image" src="images/Icon.svg" alt="иконка почты" width="50">
+                <p class="footer__mail">starkbank@gmail.com</p>
+            </div>
+            <div class="footer__card">
+                <img class="footer__image" src="images/Icon5.svg" alt="иконка телефона" width="50">
+                <p class="footer__contacts">+79024375673</p>
+            </div>
+            <div class="footer__card">
+                <img class="footer__image" src="images/Icon6.svg" alt="иконка адреса" width="50">
+                <p class="footer__address">Республика Марий Эл, г. Йошкар-Ола,ул.Кирова,45</p>
+            </div>
         </div>
+        <p class="footer__authors">Черепанова Анна, Ванюкова Полина, Иванова Дарья, ЭК-21</p>
     </footer>
-    <!--/ Подвал -->
-    <!-- Формы -->
-    <div style="display: none" class="dialog dialog--layout">
+    <div class="dialog dialog--layout">
         <!-- Форма "Войдите в профиль" -->
-        <section class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
+        <section style="display: none;" class="popup">
+
             <h2 class="popup__title">Войдите в профиль</h2>
             <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
             <div class="popup__buttons">
@@ -164,17 +181,17 @@
         </section>
         <!--/ Форма "Войдите в профиль" -->
         <!-- Форма "Регистрация" -->
-        <section style="display: none" class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+        <section style="display: none;" class="popup">
+            <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="30"
                     height="24"></button>
-            <h2 class="popup__title popup__title--registration">Регистрация</h2>
+            <h2 class="popup__title">Регистрация</h2>
             <form class="popup__form form" action="/" method="post">
                 <input class="form__field" type="text" name="name" placeholder="Имя" required>
                 <input class="form__field" type="email" name="email" placeholder="Логин" required>
                 <fieldset class="form__fieldset">
                     <div class="form__field-block">
                         <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                        <span class="form__field-alert">Минимум 8 символов</span>
+                        <span>Минимум 8 символов</span>
                     </div>
                     <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
                         required>
@@ -188,8 +205,8 @@
         </section>
         <!--/ Форма "Регистрация" -->
         <!-- Форма "Войти" -->
-        <section style="display: none" class="popup">
-            <button class="popup__close" type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24"
+        <section style="display: none;" class="popup">
+            <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="24"
                     height="24"></button>
             <h2 class="popup__title">Войти</h2>
             <form class="popup__form form" action="/" method="post">
@@ -204,7 +221,6 @@
         </section>
         <!--/ Форма "Войти" -->
     </div>
-    <!--/ Формы -->
 
     <script src="/scripts/script.js"></script>
 </body>

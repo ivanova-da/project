@@ -24,7 +24,17 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
        }
+.products__item {
+        text-decoration: none; 
+}
+.products__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
+    }
 .products__description{
         margin-top: 0;
         margin-bottom: 15px;
@@ -60,7 +70,17 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
        }
+.offers__item {
+        text-decoration: none; 
+}
+.offers__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
+}
 .offers__description{
         margin-top: 0;
         margin-bottom: 15px;
@@ -75,7 +95,7 @@
        }
 .offers__image{
         width: 70%;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
         display: block;
         margin-left: auto;
@@ -99,6 +119,16 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        background-color: rgb(166, 180, 88);
+        color: rgb(255, 255, 255);
+        transition: color 0.5s, background-color 0.5s;
+       }
+.quality__item {
+        text-decoration: none; 
+}
+.quality__title:hover {
+        background-color: rgb(154, 175, 104);
+        color: rgb(172, 197, 113);
        }
 .quality__description{
         margin-top: 0;
@@ -126,10 +156,11 @@
         justify-content: center;
 }
 .footer__card{
-        width: 350px;
+        width: 260px;
+        height: 200px;
         padding: 15px;
         background-color: rgb(200, 202, 204);
-       color: black;
+        color: black;
         box-shadow: 1px 2px 20px 5px #d7d7d7;
        }
 .footer__title{
@@ -152,7 +183,7 @@
         list-style-type: none;
        }
 .footer__image{
-        width: 30%;
+        width: 50%;
         height: 100px;
         object-fit: cover;
         display: block;
