@@ -7,7 +7,7 @@
     flex-shrink: 0;
    }
 .about{
-    background-color: rgb(180, 181, 182);
+    background-color: rgb(114, 100, 151);
      color: rgb(255, 255, 255);
      padding: 10px;
     }
@@ -24,7 +24,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        background-color: rgb(166, 180, 88);
+        background-color: rgb(86, 53, 148);
         color: rgb(255, 255, 255);
         transition: color 0.5s, background-color 0.5s;
        }
@@ -32,8 +32,8 @@
         text-decoration: none; 
 }
 .products__title:hover {
-        background-color: rgb(154, 175, 104);
-        color: rgb(172, 197, 113);
+        background-color: rgb(91, 95, 151);
+        color: rgb(103, 98, 131);
     }
 .products__description{
         margin-top: 0;
@@ -70,7 +70,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        background-color: rgb(166, 180, 88);
+        background-color: rgb(86, 53, 148);
         color: rgb(255, 255, 255);
         transition: color 0.5s, background-color 0.5s;
        }
@@ -78,8 +78,8 @@
         text-decoration: none; 
 }
 .offers__title:hover {
-        background-color: rgb(154, 175, 104);
-        color: rgb(172, 197, 113);
+        background-color: rgb(91, 95, 151);
+        color: rgb(103, 98, 131);
 }
 .offers__description{
         margin-top: 0;
@@ -106,6 +106,50 @@
         flex-wrap: wrap;
         justify-content: center;
 }
+.offers__indicators {
+        position: absolute;
+        right: 52px;
+        top: 0;
+    
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+    
+        font-size: 16px;
+        line-height: 28px;
+    }
+    
+.offers__indicators-favourites,
+.offers__indicator-time {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+    
+.offers__indicators-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+    
+        line-height: 1;
+    
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    
+    }
+    
+.offers__indicators-image path {
+        transition: fill 0.4s;
+    }
+    
+.offers__indicators-image--active path {
+        fill: red;
+    }
+    
+.offers__indicators-button:hover .offers__indicators-image path {
+        fill: red;
+    }
 .quality__card{
         width: 350px;
         padding: 15px;
@@ -119,7 +163,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
-        background-color: rgb(166, 180, 88);
+        background-color: rgb(86, 53, 148);
         color: rgb(255, 255, 255);
         transition: color 0.5s, background-color 0.5s;
        }
@@ -127,8 +171,8 @@
         text-decoration: none; 
 }
 .quality__title:hover {
-        background-color: rgb(154, 175, 104);
-        color: rgb(172, 197, 113);
+        background-color: rgb(91, 95, 151);
+        color: rgb(103, 98, 131);
        }
 .quality__description{
         margin-top: 0;
