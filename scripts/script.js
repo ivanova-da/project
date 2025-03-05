@@ -5,65 +5,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (header) {
     console.log('Константа header существует');
+  }
+})
 
-      /* 
-      *   Алгоритм
-      *
-      *   1. Начало.
-      *   2. Получаем высоту блока/элемента (создание переменной, которая не будет меняться).
-      *   3. Проверка условия (навешиваем слушатель событий на scroll страницы и ожидаем ее прокрутку): если страница прокручивается.
-      *       3.1. Да: Получаем значение насколько прокрутили страницу (создание переменной, которая будет меняться).
-      *           3.1.1 Проверка условия (сравниваем высоту элемента и значение прокрученной страницы): если расстояние от верха страницы больше высоты элемента
-      *               3.1.1.1. Да: устанавливаем класс модификатора на элемент
-      *               3.1.1.2. Нет (если расстояние от верха экрана меньше высоты элемента): удаляем класс модификатора у элемента
-      *       3.2. Нет: Конец
-      *   4. Конец
-      * 
-      *   Блок-схема: /images/block-schema.png
-      */
-     
-      const heightHeader = header.offsetHeight;
+const loginHeaderButton = document.querySelector('.header__login');
+const dialogLayout = document.querySelector('.dialog');
 
-      document.addEventListener('scroll', () => {
+if (loginHeaderButton && dialogLayout) {
+    const closeDialogButton = dialogLayout.querySelector('.popup__close');
+    const selectPopup = dialogLayout.querySelector('#popup-select');
+    const loginPopup = dialogLayout.querySelector('#popup-login');
+    const registrationPopup = dialogLayout.querySelector('#popup-registration');
+    const switchToRegister = selectPopup.querySelector('[data-registration]');
+    const switchToLogin = selectPopup.querySelector('[data-login]');
 
-        console.log('Страница скролится');
+    // Открытие модального окна при клике на кнопку "Войти"
+    loginHeaderButton.addEventListener('click', () => {
+        dialogLayout.removeAttribute('hidden');
+    });
 
-        let scrollPageY = this.scrollY;
+    // Закрытие модального окна при клике на кнопку закрытия
+    closeDialogButton.addEventListener('click', () => {
+        dialogLayout.setAttribute('hidden', true);
+    });
 
-        if (scrollPageY > heightHeader) {
-            header.classList.add('header--scroll')
-        } else {
-          header.classList.remove('header--scroll')
+    // Закрытие модального окна при клике вне его области
+    window.addEventListener('click', (event) => {
+        if (event.target === dialogLayout) {
+            dialogLayout.setAttribute('hidden', true);
         }
-      })
-  }
+    });
 
- 
+    // Переключение на форму регистрации
+    if (registrationPopup) {
+        switchToRegister.addEventListener('click', (event) => {
+            event.preventDefault();
+            selectPopup.setAttribute('hidden', true);
+            loginPopup.setAttribute('hidden', true);
+            registrationPopup.removeAttribute('hidden');
+        });
+    }
 
-  const favoriteBlock = document.querySelector('.offers__indicators-favourites');
-
-  if (favoriteBlock) {
-      console.log('Константа favoriteBlock существует');
-
-      const favoriteButton = favoriteBlock.querySelector('.offers__indicators-button');
-      const favoriteCount = favoriteBlock.querySelector('.offers__indicators-count');
-
-      let isFavorite = false; // Состояние избранного
-      let count = parseInt(favoriteCount.textContent); // Начальное значение счетчика с приведением строки к числу
-
-      // Обработчик клика на иконку
-      favoriteButton.addEventListener('click', () => {
-          isFavorite = !isFavorite; // Меняем состояние
-
-          if (isFavorite) {
-              count += 1; // Увеличиваем счетчик
-              favoriteButton.children[0].classList.add('offers__indicators-image--active'); // Делаем иконку красной
-          } else {
-              count -= 1; // Уменьшаем счетчик
-              favoriteButton.children[0].classList.remove('offers__indicators-image--active'); // Возвращаем иконку в серый цвет
-          }
-
-          favoriteCount.textContent = count; // Обновляем счетчик
-      });
-  }
-});
+    // Переключение на форму входа
+    if (loginPopup) {
+        switchToLogin.addEventListener('click', (event) => {
+            event.preventDefault();
+            selectPopup.setAttribute('hidden', true);
+            registrationPopup.setAttribute('hidden', true);
+            loginPopup.removeAttribute('hidden');
+        });
+    }
+}
