@@ -11,6 +11,7 @@
      color: rgb(255, 255, 255);
      padding: 10px;
     }
+
 .products__card{
         width: 350px;
         padding: 15px;
@@ -35,10 +36,6 @@
         background-color: rgb(91, 95, 151);
         color: rgb(103, 98, 131);
     }
-.products__description{
-        margin-top: 0;
-        margin-bottom: 15px;
-       } 
 .products__list {
         margin: 0;
         padding: 20px 0;
@@ -57,6 +54,26 @@
         flex-wrap: wrap;
         justify-content: center;
 }
+.products__card{
+        margin-top: 40px; 
+        display: flex;
+        justify-content: space-between; 
+    
+    }
+.products__item{
+        width: 300px;
+        position: relative;			
+    }
+.products__description {
+        margin-top: 15px; 
+        color: #39373c;
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        width: 250px;
+        background-color: #c1b0d7;
+    }
+    
 .offers__card{
         width: 350px;
         padding: 15px;
@@ -188,7 +205,37 @@
         flex-wrap: wrap;
         justify-content: center;
 }
-
+.quality__card {
+        width: 1350px;
+        margin-top: 20px; 
+        display: flex;
+        gap: 40px; 
+        overflow: hidden;
+    }
+    
+.quality__img {
+        min-width: 360px;
+    
+    }
+    
+.quality__card {
+        width: 360px; 
+        transition: 0.3s ease;
+       }   
+    
+.button__up {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: #ab94d0;
+        color: rgb(124, 113, 139);
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(63, 56, 74, 0.2);
+    }
 .footer__card{
         width: 260px;
         height: 200px;

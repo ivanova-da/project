@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="spinner"></div>         
+        <div class="loading-text">Загрузка</div>
+        </div>
+    </div>
+
+
     <header class="header">
         <a class="header__logo-wrap" href="index.html">
             <img class="header__logo" src="images/logo2.jpeg" alt="логотип сайта" width="100">
@@ -20,7 +28,7 @@
                 <li class="menu__item menu__item--active">
                     <a class="menu__link" href="#">Главная страница</a>
                 </li>
-                <li class="menu__item menu__item--active"><a class="menu__link" href="#">Вклады</a></li>
+                <li class="menu__item menu__item--active"><a class="menu__link" href="file:///E:/project-main/index1.html">Вклады</a></li>
                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Кредиты</a></li>
                 <li class="menu__item menu__item--active"><a class="menu__link" href="#">Карты</a></li>
             </ul>
@@ -28,15 +36,22 @@
         <a class="header__login" href="#">Вход</a>
         <a class="header__login" href="#">Регистрация</a>
     </header>
-    <section class="section search">
+    <section class="section search" >
         <h2 class="search__title section__title section__title--center">Введите запрос</h2>
         <form class="search__form form" action="/" method="get">
             <input class="search__form-name form__field" type="search" name="text" placeholder="Название операции">
             <button class="search__form-submit button button--accent" type="submit">Поиск</button>
         </form>
+        <ul class="search__tag-list">
+            <li class="search__tag-item">Карты</li>
+            <li class="search__tag-item">Кредиты</li>
+            <li class="search__tag-item">Вклады</li>
+            <li class="search__tag-item">Продукты</li>
+        </ul>
     </section>
     
-    <main class="main container">
+
+    <main class="main container content">
         <div class="about">
             <h2 class="about__title"> ДОБРО ПОЖАЛОВАТЬ В StarkBank</h2>
             <img class="about__image" src="images/0.webp" alt="главное изображение" width="200">
@@ -47,45 +62,51 @@
         </div>
         <section class="products">
             <h2 class="products__title">Наши продукты</h2>
-            <p class="products__description"> Откройте для себя ряд комплексных и настраиваемых банковских продуктов в
+            <p class="products__descriptioncommon"> Откройте для себя ряд комплексных и настраиваемых банковских продуктов в
                 StarkBank, разработанных с учётом ваших уникальных финансовых потребностей и стремлений.</p>
             <div class="products__list">
                 <div class="products__card">
                     <a class="products__item" href="#">
                         <span class="products__icon">
-                            <img class="products__image" src="images/Icon Container (3).svg" alt="иконка карт"
+                            <img class="products__image" src="images/IconContainer(3).svg" alt="иконка карт"
                                 width="100">
                         </span>
                         <h2 class="products__title">Карты</h2>
                     </a>
-                    <p class="products__description">Наслаждайтесь простым и удобным доступом к вашим средствам с нашим
+                    <div class="products__description" hidden>
+                        Наслаждайтесь простым и удобным доступом к вашим средствам с нашим
                         ассортиментом банковских карт. Воспользуйтесь такими функциями, как онлайн-банкинг и мобильный
-                        банкинг, дебетовые и кредитовые карты и бесплатный доступ к банкоматам.</p>
+                        банкинг, дебетовые и кредитовые карты и бесплатный доступ к банкоматам.
+                    </div>
                 </div>
                 <div class="products__card">
                     <a class="products__item" href="#">
                         <span class="products__icon">
-                            <img class="products__image" src="images/Icon Container (2).svg" alt="иконка вкладов"
+                            <img class="products__image" src="images/IconContainer(2).svg" alt="иконка вкладов"
                                 width="100">
                         </span>
                         <h2 class="products__title">Вклады</h2>
                     </a>
-                    <p class="products__description">Создайте свои сбережения с нашими конкурентоспособными процентными
+                    <div class="products__description" hidden>
+                        Создайте свои сбережения с нашими конкурентоспособными процентными
                         ставками и гибкими вариантами сберегательных счетов. Независимо от того, копите ли вы на
                         определённую цель или хотите со временем увеличить своё богатство, у нас есть подходящий для вас
-                        счёт.</p>
+                        счёт.
+                    </div>
                 </div>
                 <div class="products__card">
                     <a class="products__item" href="#">
                         <span class="products__icon">
-                            <img class="products__image" src="images/Icon Container (1).svg" alt="иконка кредитов"
+                            <img class="products__image" src="images/IconContainer(1).svg" alt="иконка кредитов"
                                 width="100">
                         </span>
                         <h2 class="products__title">Кредиты</h2>
                     </a>
-                    <p class="products__description">Осуществите свои мечты с нашими гибкими вариантами кредитования.
+                    <div class="products__description" hidden>
+                        Осуществите свои мечты с нашими гибкими вариантами кредитования.
                         Наши опытные кредитные специалисты здесь, чтобы провести вас через процесс подачи заявки и
-                        помочь вам получить необходимые средства.</p>
+                        помочь вам получить необходимые средства.
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,7 +152,6 @@
         <section class="quality">
             <h2 class="quality__title">Почему выбирают Stark Bank?</h2>
             <div class="quality__list">
-                
                 <div class="quality__card">
                     <img class="quality__image" src="images/Icon23.svg" alt="маркер" width="50">
                     <h2 class="quality__title">Надежность</h2>
@@ -148,10 +168,18 @@
                     <h2 class="quality__title">Поддержка</h2>
                     <p class="quality__description">Круглосуточная поддержка, готовая помочь в любой ситуации.</p>
                 </div>
-             
+            </div>
+            <div class="quality__button" style="text-align:center">
+                <button class="quality__left">
+                    <img src="images/left.png" alt="" class="quality__left-swiper">
+                </button>
+                <button class="quality__right">
+                    <img src="images/right.png" alt="" class="quality__right-swiper">
+                </button>
             </div>
             <p class="quality__title">Добро пожаловать в Stark Bank!</p>
         </section>
+        <button class="button__up" id="scrollToTopBtn">Наверх</button>
     </main>
     <footer class="footer container">
 
@@ -171,22 +199,23 @@
         </div>
         <p class="footer__authors">Черепанова Анна, Ванюкова Полина, Иванова Дарья, ЭК-21</p>
     </footer>
-    <div class="dialog dialog--layout">
-        <!-- Форма "Войдите в профиль" -->
-        <section style="display: none;" class="popup">
-
-            <h2 class="popup__title">Войдите в профиль</h2>
-            <p class="popup__desc">Добавлять рецепты могут только зарегистрированные пользователи.</p>
+    <div class="dialog dialog--layout" hidden>
+        <div class="dialog__content">
+            <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="30"
+                height="24"></button>
+                </div>
+<!-- Форма "Войдите в профиль" -->
+ <section class="popup" id="popup-select">
+    <h2 class="popup__title">Войдите в профиль</h2>
+            <p class="popup__desc">Пользоваться могут только зарегистрированные пользователи.</p>
             <div class="popup__buttons">
-                <button class="button button--accent" type="button">Войти</button>
-                <button class="button" type="button">Регистрация</button>
+                <button class="button button--accent" type="button" data-login>Войти</button>
+                <button class="button" type="button" data-registration>Регистрация</button>
             </div>
-        </section>
+ </section>
         <!--/ Форма "Войдите в профиль" -->
         <!-- Форма "Регистрация" -->
-        <section style="display: none;" class="popup">
-            <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="30"
-                    height="24"></button>
+         <section class="popup" id="popup-registration" hidden>
             <h2 class="popup__title">Регистрация</h2>
             <form class="popup__form form" action="/" method="post">
                 <input class="form__field" type="text" name="name" placeholder="Имя" required>
@@ -205,12 +234,10 @@
                 </fieldset>
                 <button class="button button--link" type="button">У меня уже есть аккаунт</button>
             </form>
-        </section>
-        <!--/ Форма "Регистрация" -->
+         </section>
+          <!--/ Форма "Регистрация" -->
         <!-- Форма "Войти" -->
-        <section style="display: none;" class="popup">
-            <button class="popup__close" type="button"><img src="images/close.svg" alt="Закрыть окно" width="24"
-                    height="24"></button>
+         <section class="popup" id="popup-login" hidden>
             <h2 class="popup__title">Войти</h2>
             <form class="popup__form form" action="/" method="post">
                 <input class="form__field" type="email" name="email" placeholder="Логин" required>
@@ -221,9 +248,9 @@
                 </fieldset>
                 <button class="button button--link" type="button">У меня еще нет аккаунта</button>
             </form>
-        </section>
-        <!--/ Форма "Войти" -->
-    </div>
+         </section>
+        </div>
+        
     <script src="scripts/script.js"></script>
 </body>
 

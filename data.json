@@ -1,0 +1,29 @@
+[
+    {
+         "link": "/cards-menu/",
+         "icon": "images/Icon22.svg",
+         "iconAlt": "стрелка",
+         "iconWidth": 70,
+         "iconHeight": 70,
+         "title": "Карты",
+         "description": "Кэшбэк 1% Бесплатное обслуживание Мировая поддержка"
+     },
+     {
+         "link": "/deposits-menu/",
+         "icon": "images/Icon22.svg",
+         "iconAlt": "стрелка",
+         "iconWidth": 70,
+         "iconHeight": 70,
+         "title": "Вклады",
+         "description": "Ставка 5% годовых Минимум 1000 рублей Без скрытых комиссий Гибкие условия"
+     },
+     {
+         "link": "/credits-menu/",
+         "icon": "images/Icon22.svg",
+         "iconAlt": "стрелка",
+         "iconWidth": 70,
+         "iconHeight": 70,
+         "title": "Кредиты",
+         "description": "Ставка 10% годовых Сумма до 1 миллиона Одобрение за 1 час"
+     }
+ ]
