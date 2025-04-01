@@ -7,6 +7,30 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('Константа header существует');
     }
 
+// Карусель (слайдер)
+const slider1 = document.querySelector('.swiper');
+
+if (slider1) {
+    const swiper = new Swiper(slider1, {
+        // Дополнительные параметры
+        slidesPerView: 4, // Количество слайдов на экране
+        spaceBetween: 30, // Расстояние между слайдами
+        loop: true,  // Зацикливание слайдов
+
+        // Пагинация
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Навигационные стрелки
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+
     // Preloader страницы
     const preloader = document.querySelector('.preloader');
     const content = document.querySelector('.content');
@@ -50,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    const cardsContainer = document.querySelector('#offers');
+    /*const cardsContainer = document.querySelector('#offers');
     if (cardsContainer) {
         const cardList = cardsContainer.querySelector('.offers__list');
 
-        /* Моковые данные */
+        
         const offersData = {
             card1: {
                 link: '/cards-menu/',
@@ -110,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const cardElement = createCard(card.link, card.icon, card.iconAlt, card.iconWidth, card.iconHeight, card.title, card.description);
             cardList.insertAdjacentHTML('beforeend', cardElement); // Второй вариант
         }
-    }
+    }*/
 
     const mybutton = document.getElementById("scrollToTopBtn");
 
@@ -134,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (offersContainer) {
 
-        const dataTitleOffers = ['Карты', 'Вклады', 'Кредиты'];
+        const dataTitleOffers = ['Интересные предложения','Карты', 'Вклады', 'Кредиты'];
 
         const titleOffers = offersContainer.querySelectorAll(".offers__title");
 
@@ -269,17 +293,19 @@ if (cardsContainer) {
     const apiUrl = 'data.json';
 
     // Функция для создания карточки
-    const createCard = (linkUrl, iconUrl, iconAlt, iconWidth, iconHeight, title, description) => {
+    const createCard = (linkUrl, iconUrl, iconAlt, iconWidth, title, description) => {
 
         // Шаблонные строки и подстановки
         const card = `
+        <div class="offers__card">
           <a class="offers__item" href="${linkUrl}">
               <span class="offers__icon">
-                  <img src="${iconUrl}" alt="${iconAlt}" width="${iconWidth}" height="${iconHeight}">
+                  <img src="${iconUrl}" alt="${iconAlt}" width="${iconWidth}">
               </span>
-              <h3 class="offers__title">${title}</h3>
+              <h2 class="offers__title">${title}</h2>
+              </a>
               <p class="offers__description">${description}</p>
-          </a>
+              </div>
       `;
 
         return card;
@@ -300,7 +326,7 @@ if (cardsContainer) {
             // }
 
             data.forEach(item => {
-                const cardElement = createCard(item.link, item.icon, item.iconAlt, item.iconWidth, item.iconHeight, item.title, item.description);
+                const cardElement = createCard(item.link, item.icon, item.iconAlt, item.iconWidth, item.title, item.description);
                 cardList.insertAdjacentHTML('beforeend', cardElement);
             });
         })

@@ -4,9 +4,8 @@
          "icon": "images/Icon22.svg",
          "iconAlt": "стрелка",
          "iconWidth": 70,
-         "iconHeight": 70,
          "title": "Карты",
-         "description": "Кэшбэк 1% Бесплатное обслуживание Мировая поддержка"
+         "description": "<p class='offers__description'>Кэшбэк 1%</p> <p class='offers__description'>Бесплатное обслуживание</p><p class='offers__description'>Мировая поддержка</p>"
      },
      {
          "link": "/deposits-menu/",
@@ -15,7 +14,7 @@
          "iconWidth": 70,
          "iconHeight": 70,
          "title": "Вклады",
-         "description": "Ставка 5% годовых Минимум 1000 рублей Без скрытых комиссий Гибкие условия"
+         "description": "<p class='offers__description'>Ставка 5% годовых </p><p class='offers__description'>Минимум 1000 рублей</p><p class='offers__description'>Без скрытых комиссий</p>"
      },
      {
          "link": "/credits-menu/",
@@ -24,6 +23,6 @@
          "iconWidth": 70,
          "iconHeight": 70,
          "title": "Кредиты",
-         "description": "Ставка 10% годовых Сумма до 1 миллиона Одобрение за 1 час"
+         "description": "<p class='offers__description'>Ставка 10% годовых</p><p class='offers__description'>Сумма до 1 миллиона</p><p class='offers__description'>Одобрение за 1 час</p>"
      }
  ]

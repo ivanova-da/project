@@ -26,6 +26,7 @@
 @import "popup.css";
 @import "form.css";
 @import "search.css";
+@import "slider.css";
 
 /* Подключение стилей отвечающих за адаптив*/
 @import "adaptability.css";

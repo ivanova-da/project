@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Банк</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -110,7 +111,7 @@
                 </div>
             </div>
         </section>
-        <section class="offers">
+        <section class="offers" id="offers">
             <h2 class="offers__title">Интересные предложения</h2>
             <div class="offers__list">
                 <div class="offers__card">
@@ -134,7 +135,6 @@
                     <p class="offers__description">Ставка 5% годовых </p>
                     <p class="offers__description">Минимум 1000 рублей</p>
                     <p class="offers__description">Без скрытых комиссий</p>
-                    <p class="offers__description">Гибкие условия</p>
                 </div>
                 <div class="offers__card">
                     <a class="offers__item" href="#">
@@ -179,6 +179,51 @@
             </div>
             <p class="quality__title">Добро пожаловать в Stark Bank!</p>
         </section>
+
+        <section class="section card card--slider swiper">
+            <h2 class="card__titlecommon">Наши сервисы</h2>
+            <div class="card__list card__list--slider swiper-wrapper">
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/icons1.png" alt="Иконка" width="22" height="24">
+                    </span>
+                    <h3 class="card__title">Банк в VK</h3>
+                    <p class="card__description">Привычные операции на платформе ВКонтакте</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/icons2.png" alt="Иконка" width="24" height="24">
+                    </span>
+                    <h3 class="card__title">Платежи</h3>
+                    <p class="card__description">Быстрые и удобные платежи в Stark Bank Онлайн</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/icons3.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">"Мой дом" в Stark Bank Онлайн</h3>
+                    <p class="card__description">Вся информация о недвижимости</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/icons4.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">Мои инвестиции</h3>
+                    <p class="card__description">Инвестируйте в совю страну с надёжным брокером</p>
+                </a>
+                <a class="card__item swiper-slide" href="#">
+                    <span class="card__icon">
+                        <img src="images/icons5.png" alt="Иконка" width="24" height="23">
+                    </span>
+                    <h3 class="card__title">Мобильная связь за 0 рублей</h3>
+                    <p class="card__description">Для новых абонентов Stark Bank Мобайл до конца года</p>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+
         <button class="button__up" id="scrollToTopBtn">Наверх</button>
     </main>
     <footer class="footer container">
@@ -251,7 +296,8 @@
          </section>
         </div>
         
-    <script src="scripts/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>
